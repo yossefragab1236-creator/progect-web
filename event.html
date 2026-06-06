@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Maison — Fine Dining Event</title>
+    <link rel="stylesheet" href="./css/event.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <span
+          class="nav-logo"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          >LA MAISON</span
+        >
+        <div class="nav-links">
+          <a href="#details">Details</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#rsvp" class="nav-cta">Reserve</a>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <img
+        src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100070723/restaurant_hero_c797b9e8.png"
+        alt="restaurant ambiance"
+        class="hero-img"
+        crossorigin="anonymous"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle fade-up" style="animation-delay: 0ms">
+          Exclusive Event · One Night Only
+        </p>
+        <h1 class="hero-title fade-up" style="animation-delay: 120ms">
+          An Evening of Fine Dining<br />&amp; Live Orchestra
+        </h1>
+        <p class="hero-tagline fade-up" style="animation-delay: 240ms">
+          A night of culinary artistry and live music
+        </p>
+        <div class="hero-date fade-up" style="animation-delay: 360ms">
+          <span class="line"></span>
+          <span>Friday, June 20 · 2025</span>
+          <span class="line"></span>
+        </div>
+        <a href="#rsvp" class="btn-hero fade-up" style="animation-delay: 480ms"
+          >Reserve Your Table</a
+        >
+      </div>
+      <div class="scroll-arrow">&#8964;</div>
+    </section>
+    <!-- DETAILS -->
+    <section class="details-section" id="details">
+      <div class="container">
+        <p class="section-label">Event Details</p>
+        <h2 class="section-title">An Unforgettable Evening</h2>
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <p class="detail-label">Time</p>
+            <p class="detail-value">8:00 PM</p>
+            <p class="detail-sub">Doors open at 7:30 PM</p>
+          </div>
+          <div class="detail-card detail-card--mid">
+            <div class="detail-icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <p class="detail-label">Location</p>
+            <p class="detail-value">La Maison Riyadh</p>
+            <p class="detail-sub">King Fahd Road, Kingdom Tower</p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"
+                />
+              </svg>
+            </div>
+            <p class="detail-label">Dress Code</p>
+            <p class="detail-value">Black Tie</p>
+            <p class="detail-sub">Formal Attire Required</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+      <div class="container container--narrow">
+        <p class="section-label">The Menu</p>
+        <h2 class="section-title">An Exceptional Culinary Journey</h2>
+        <p class="section-sub">
+          Crafted exclusively for the evening by our Executive Chef
+        </p>
+        <div class="ornate-divider" data-animate>
+          <span class="od-line"></span>
+          <span class="od-diamond od-sm"></span>
+          <span class="od-line od-short"></span>
+          <span class="od-diamond od-xs"></span>
+          <span class="od-diamond od-lg"></span>
+          <span class="od-line od-short"></span>
+          <span class="od-diamond od-xs"></span>
+          <span class="od-line"></span>
+        </div>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="menu-left">
+              <p class="menu-course">Appetizer</p>
+              <h3 class="menu-name">Foie Gras Terrine</h3>
+            </div>
+            <p class="menu-desc">Wild fig jam, toasted brioche, micro greens</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-left">
+              <p class="menu-course">Main Course</p>
+              <h3 class="menu-name">Braised Osso Buco</h3>
+            </div>
+            <p class="menu-desc">
+              Saffron risotto, seasonal vegetables, gremolata
+            </p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-left">
+              <p class="menu-course">Dessert</p>
+              <h3 class="menu-name">Vanilla Crème Brûlée</h3>
+            </div>
+            <p class="menu-desc">
+              Red berry compote, almond tuile, vanilla bean
+            </p>
+          </div>
+          <div class="menu-item menu-item--last">
+            <div class="menu-left">
+              <p class="menu-course">Beverages</p>
+              <h3 class="menu-name">Signature Herbal Infusion</h3>
+            </div>
+            <p class="menu-desc">
+              A bespoke blend of Mediterranean herbs and florals
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <p class="section-label">Gallery</p>
+        <h2 class="section-title">The Ambiance</h2>
+      </div>
+      <div class="gallery-strip" id="galleryStrip">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
+            alt="fine dining"
+            crossorigin="anonymous"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80"
+            alt="restaurant interior"
+            crossorigin="anonymous"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80"
+            alt="gourmet food"
+            crossorigin="anonymous"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&q=80"
+            alt="dessert"
+            crossorigin="anonymous"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76594e8bb30?w=600&q=80"
+            alt="main course"
+            crossorigin="anonymous"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- RSVP -->
+    <section class="rsvp-section" id="rsvp">
+      <div class="container container--narrow">
+        <p class="section-label">Reservation</p>
+        <h2 class="section-title">Reserve Your Table</h2>
+        <p class="section-sub">Seats are limited — secure yours today</p>
+        <div class="ornate-divider" data-animate>
+          <span class="od-line"></span>
+          <span class="od-diamond od-sm"></span>
+          <span class="od-line od-short"></span>
+          <span class="od-diamond od-xs"></span>
+          <span class="od-diamond od-lg"></span>
+          <span class="od-line od-short"></span>
+          <span class="od-diamond od-xs"></span>
+          <span class="od-line"></span>
+        </div>
+        <form class="rsvp-form" id="rsvpForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <div class="input-wrap">
+              <svg
+                class="input-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <div class="input-wrap">
+              <svg
+                class="input-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.09 5.18 2 2 0 015.07 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 17.92v-.01z"
+                />
+              </svg>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+1 (000) 000-0000"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <div class="input-wrap">
+              <svg
+                class="input-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                <path d="M16 3.13a4 4 0 010 7.75" />
+              </svg>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8 Guests</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Confirm Reservation</button>
+        </form>
+        <div class="rsvp-success" id="rsvpSuccess" style="display: none">
+          <div class="success-icon">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3>Reservation Confirmed</h3>
+          <p class="success-sub">
+            Thank you! We'll reach out to confirm your booking.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">LA MAISON</div>
+        <p class="footer-tagline">Fine Dining · Riyadh</p>
+        <div class="footer-contacts">
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">+966 11 000 0000</p>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">events@lamaison.sa</p>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="footer-copy">
+          &copy; 2025 La Maison Restaurant · All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Sticky nav
+      window.addEventListener("scroll", () => {
+        document
+          .getElementById("navbar")
+          .classList.toggle("scrolled", window.scrollY > 80);
+      });
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          document
+            .querySelector(a.getAttribute("href"))
+            ?.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+      // Ornate divider intersection
+      const dividers = document.querySelectorAll(
+        ".ornate-divider[data-animate]",
+      );
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.5 },
+      );
+      dividers.forEach((d) => io.observe(d));
+      // Gallery drag scroll
+      const strip = document.getElementById("galleryStrip");
+      let isDown = false,
+        startX,
+        scrollLeft;
+      strip.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - strip.offsetLeft;
+        scrollLeft = strip.scrollLeft;
+      });
+      document.addEventListener("mouseup", () => (isDown = false));
+      document.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        strip.scrollLeft = scrollLeft - (e.pageX - strip.offsetLeft - startX);
+      });
+      // RSVP form
+      document.getElementById("rsvpForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector(".btn-submit");
+        btn.textContent = "Confirming...";
+        btn.disabled = true;
+        setTimeout(() => {
+          document.getElementById("rsvpForm").style.display = "none";
+          document.getElementById("rsvpSuccess").style.display = "block";
+        }, 1200);
+      });
+      // Input focus styles
+      document.querySelectorAll("input, select").forEach((el) => {
+        el.addEventListener("focus", () => {
+          el.parentElement.classList.add("focused");
+        });
+        el.addEventListener("blur", () => {
+          el.parentElement.classList.remove("focused");
+        });
+      });
+    </script>
+  </body>
+</html>

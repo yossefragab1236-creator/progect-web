@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcfbf7; 
+    color: #333;
+}
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: url('../share/photo-1682264933304-1943bfa8df38.avif') center/cover no-repeat; 
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(139, 69, 19, 0.25); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.restaurant-sub {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+.restaurant-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.restaurant-tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+.tabs-container {
+    width: 100%;
+    background-color: #f5f2eb; 
+    border-bottom: 1px solid #e2ded5;
+}
+.tabs-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.tab-item {
+    padding: 20px 25px;
+    font-size: 0.95rem;
+    color: #7c776e;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.tab-item:hover, .tab-item.active {
+    color: #1a1a1a;
+}
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 20px;
+    border-bottom: 2px solid #1a1a1a;
+}
+.menu-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+.category-header {
+    margin-bottom: 35px;
+}
+.category-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #2c3539;
+    margin-bottom: 2px;
+}
+.category-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #9a9485;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px 30px; 
+}
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.card-image-box {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 12px; 
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    color: #fff;
+}
+.badge-orange {
+    background-color: #d9823b; 
+}
+.badge-brown {
+    background-color: #aa7c52; 
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+.card-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+.card-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    max-width: 200px; 
+    flex-grow: 1;
+}
+.price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: #b58050; 
+    font-weight: bold;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+.description {
+    font-size: 0.9rem;
+    color: #706e68;
+    line-height: 1.5;
+    
+}
+.footer{
+    text-align: center;
+    height: 200px;
+    background-color: #d9823b;
+    justify-content: center;
+}
+.h2{
+    padding-top: 70px;
+    line-height: 1.8;
+}

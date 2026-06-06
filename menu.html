@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Tavola - Menu</title>
+    <link rel="stylesheet" href="./css/menu.css" />
+    <!-- اختياري: خطوط جوجل القريبة من التصميم -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1. هيرو بانر علوي (Hero Banner) -->
+    <header class="hero-banner">
+      <div class="hero-overlay">
+        <span class="restaurant-sub">RESTAURANTE</span>
+        <h1 class="restaurant-title">La Tavola</h1>
+        <p class="restaurant-tagline">Cozinha autoral com alma italiana</p>
+      </div>
+    </header>
+    <!-- 2. شريط التنقل بين الأقسام (Tab Menu) -->
+    <!-- <nav class="tabs-container">
+      <ul class="tabs-list">
+        <li class="tab-item active">Entradas</li>
+        <li class="tab-item active">Pratos Principais</li>
+        <li class="tab-item active">Sobremesas</li>
+        <li class="tab-item active">Bebidas</li>
+      </ul>
+    </nav> -->
+    <!-- 3. سكشن محتوى المنيو الرئيسي -->
+    <main class="menu-container">
+      <div class="category-header">
+        <h2>Entradas</h2>
+        <span class="category-subtitle">PARA COMEÇAR</span>
+      </div>
+      <!-- شبكة عرض كروت الطعام (Grid) -->
+      <div class="menu-grid">
+        <!-- كارت 1: Burrata -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1625861910621-e9385ba1d993.avif"
+              alt="Burrata com Tomate"
+            />
+            <span class="badge badge-orange">CHEF'S PICK</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Burrata com Tomate Heirloom</h3>
+              <span class="price">R$ 42</span>
+            </div>
+            <p class="description">
+              Burrata cremosa servida com tomates coloridos, azeite extra
+              virgem, manjericão fresco e flor de sal.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 2: Carpaccio -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1682264933304-1943bfa8df38.avif"
+              alt="Carpaccio de Polvo"
+            />
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Carpaccio de Polvo</h3>
+              <span class="price">R$ 54</span>
+            </div>
+            <p class="description">
+              Polvo finamente fatiado com vinagrete de limão siciliano,
+              alcaparras, rúcula e parmesão.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 3: Croquetes -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1660505465468-c898ea7ff674.avif"
+              alt="Croquetes de Cogumelo"
+            />
+            <span class="badge badge-brown">VEGANO</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Croquetes de Cogumelo Trufado</h3>
+              <span class="price">R$ 38</span>
+            </div>
+            <p class="description">
+              Croquetes crocantes recheados com cogumelos selvagens e creme de
+              trufa negra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--2-->
+    <main class="menu-container">
+      <div class="category-header">
+        <h2>Pratos Principais</h2>
+        <span class="category-subtitle">O coração do cardápio</span>
+      </div>
+      <!-- شبكة عرض كروت الطعام (Grid) -->
+      <div class="menu-grid">
+        <!-- كارت 1: Burrata -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1551183053-bf91a1d81141.avif"
+              alt="Burrata com Tomate"
+            />
+            <span class="badge badge-orange">CHEF'S PICK</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Burrata com Tomate Heirloom</h3>
+              <span class="price">R$ 42</span>
+            </div>
+            <p class="description">
+              Burrata cremosa servida com tomates coloridos, azeite extra
+              virgem, manjericão fresco e flor de sal.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 2: Carpaccio -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1671522636018-485ef1f7cd8f.avif"
+              alt="Carpaccio de Polvo"
+            />
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Carpaccio de Polvo</h3>
+              <span class="price">R$ 54</span>
+            </div>
+            <p class="description">
+              Polvo finamente fatiado com vinagrete de limão siciliano,
+              alcaparras, rúcula e parmesão.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 3: Croquetes -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1560788784-66eda82b5eb7.avif"
+              alt="Croquetes de Cogumelo"
+            />
+            <span class="badge badge-brown">VEGANO</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Croquetes de Cogumelo Trufado</h3>
+              <span class="price">R$ 38</span>
+            </div>
+            <p class="description">
+              Croquetes crocantes recheados com cogumelos selvagens e creme de
+              trufa negra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--3------------------------>
+    <main class="menu-container">
+      <div class="category-header">
+        <h2>Sobremesas</h2>
+        <span class="category-subtitle">Doce final </span>
+      </div>
+      <!-- شبكة عرض كروت الطعام (Grid) -->
+      <div class="menu-grid">
+        <!-- كارت 1: Burrata -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1737700087822-0dfbb754db30.avif"
+              alt="Burrata com Tomate"
+            />
+            <span class="badge badge-orange">CHEF'S PICK</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Burrata com Tomate Heirloom</h3>
+              <span class="price">R$ 42</span>
+            </div>
+            <p class="description">
+              Burrata cremosa servida com tomates coloridos, azeite extra
+              virgem, manjericão fresco e flor de sal.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 2: Carpaccio -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1737700088028-fae0666feb83.avif"
+              alt="Carpaccio de Polvo"
+            />
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Carpaccio de Polvo</h3>
+              <span class="price">R$ 54</span>
+            </div>
+            <p class="description">
+              Polvo finamente fatiado com vinagrete de limão siciliano,
+              alcaparras, rúcula e parmesão.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 3: Croquetes -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1740594967618-23cd757b9291 (1).avif"
+              alt="Croquetes de Cogumelo"
+            />
+            <span class="badge badge-brown">VEGANO</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Croquetes de Cogumelo Trufado</h3>
+              <span class="price">R$ 38</span>
+            </div>
+            <p class="description">
+              Croquetes crocantes recheados com cogumelos selvagens e creme de
+              trufa negra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--4     ------------------------>
+    <main class="menu-container">
+      <div class="category-header">
+        <h2>Bebidas</h2>
+        <span class="category-subtitle">Para acompanhar </span>
+      </div>
+      <!-- شبكة عرض كروت الطعام (Grid) -->
+      <div class="menu-grid">
+        <!-- كارت 1: Burrata -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1556855810-ac404aa91e85.avif"
+              alt="Burrata com Tomate"
+            />
+            <span class="badge badge-orange">CHEF'S PICK</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Burrata com Tomate Heirloom</h3>
+              <span class="price">R$ 42</span>
+            </div>
+            <p class="description">
+              Burrata cremosa servida com tomates coloridos, azeite extra
+              virgem, manjericão fresco e flor de sal.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 2: Carpaccio -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1597075687490-8f673c6c17f6.avif"
+              alt="Carpaccio de Polvo"
+            />
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Carpaccio de Polvo</h3>
+              <span class="price">R$ 54</span>
+            </div>
+            <p class="description">
+              Polvo finamente fatiado com vinagrete de limão siciliano,
+              alcaparras, rúcula e parmesão.
+            </p>
+          </div>
+        </div>
+        <!-- كارت 3: Croquetes -->
+        <div class="menu-card">
+          <div class="card-image-box">
+            <img
+              src="./share/photo-1596463989140-3b600dab72e5.avif"
+              alt="Croquetes de Cogumelo"
+            />
+            <span class="badge badge-brown">VEGANO</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header-row">
+              <h3 class="description-h">Croquetes de Cogumelo Trufado</h3>
+              <span class="price">R$ 38</span>
+            </div>
+            <p class="description">
+              Croquetes crocantes recheados com cogumelos selvagens e creme de
+              trufa negra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h2 class="h2">La Tavola</h2>
+      <p>Rua das Flores, 142 · São Paulo · (11) 3456-7890</p>
+    </footer>
+  </body>
+</html>

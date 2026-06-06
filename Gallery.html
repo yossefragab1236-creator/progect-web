@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Maison — Photo Gallery</title>
+    <link rel="stylesheet" href="./css/Gallery.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ── HEADER ── -->
+    <header class="gallery-header">
+      <div class="header-bg"></div>
+      <div class="header-overlay"></div>
+      <div class="header-content">
+        <a href="index.html" class="back-link">&#8592; Back to Event</a>
+        <p class="section-label">La Maison</p>
+        <h1 class="header-title">Photo Gallery</h1>
+        <p class="header-sub"><em>A glimpse into our world</em></p>
+      </div>
+    </header>
+
+    <!-- ── FILTERS ── -->
+    <div class="filters-bar" id="filtersBar">
+      <div class="filters-inner">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="interior">Interior</button>
+        <button class="filter-btn" data-cat="food">Food</button>
+        <button class="filter-btn" data-cat="cocktails">Cocktails</button>
+        <button class="filter-btn" data-cat="events">Events</button>
+      </div>
+    </div>
+
+    <!-- ── GRID ── -->
+    <main class="gallery-main">
+      <div class="masonry-grid" id="grid">
+        <div class="grid-item wide" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=85"
+            alt="Signature Foie Gras"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Signature Foie Gras</span>
+          </div>
+        </div>
+
+        <div class="grid-item tall" data-cat="interior">
+          <img
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=900&q=85"
+            alt="Main Dining Hall"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Interior</span
+            ><span class="item-name">Main Dining Hall</span>
+          </div>
+        </div>
+
+        <div class="grid-item" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&q=85"
+            alt="Chef's Signature Dish"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Chef's Signature Dish</span>
+          </div>
+        </div>
+
+        <div class="grid-item" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=900&q=85"
+            alt="Crème Brûlée"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Crème Brûlée</span>
+          </div>
+        </div>
+
+        <div class="grid-item wide" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76594e8bb30?w=900&q=85"
+            alt="Osso Buco Main"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Osso Buco Main</span>
+          </div>
+        </div>
+
+        <div class="grid-item tall" data-cat="interior">
+          <img
+            src="https://images.unsplash.com/photo-1525268323446-0505b6fe7778?w=900&q=85"
+            alt="Private Dining Room"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Interior</span
+            ><span class="item-name">Private Dining Room</span>
+          </div>
+        </div>
+
+        <div class="grid-item" data-cat="cocktails">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=900&q=85"
+            alt="Classic Cocktail"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Cocktails</span
+            ><span class="item-name">Classic Cocktail</span>
+          </div>
+        </div>
+        <div class="grid-item wide" data-cat="cocktails">
+          <img
+            src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=900&q=85"
+            alt="Bar Selection"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Cocktails</span
+            ><span class="item-name">Bar Selection</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="cocktails">
+          <img
+            src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=900&q=85"
+            alt="Signature Martini"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Cocktails</span
+            ><span class="item-name">Signature Martini</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?w=900&q=85"
+            alt="Gourmet Plating"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Gourmet Plating</span>
+          </div>
+        </div>
+        <div class="grid-item wide" data-cat="events">
+          <img
+            src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?w=900&q=85"
+            alt="Evening Event Setup"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Events</span
+            ><span class="item-name">Evening Event Setup</span>
+          </div>
+        </div>
+        <div class="grid-item tall" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=900&q=85"
+            alt="Chef Preparation"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Chef Preparation</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="interior">
+          <img
+            src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=900&q=85"
+            alt="Outdoor Terrace"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Interior</span
+            ><span class="item-name">Outdoor Terrace</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="events">
+          <img
+            src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=900&q=85"
+            alt="Gala Dinner"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Events</span
+            ><span class="item-name">Gala Dinner</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="food">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=85"
+            alt="Fresh Ingredients"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Food</span
+            ><span class="item-name">Fresh Ingredients</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="cocktails">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=900&q=85"
+            alt="Wine Collection"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Cocktails</span
+            ><span class="item-name">Wine Collection</span>
+          </div>
+        </div>
+        <div class="grid-item wide" data-cat="events">
+          <img
+            src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=900&q=85"
+            alt="Anniversary Event"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Events</span
+            ><span class="item-name">Anniversary Event</span>
+          </div>
+        </div>
+        <div class="grid-item" data-cat="interior">
+          <img
+            src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=900&q=85"
+            alt="Lounge Area"
+            crossorigin="anonymous"
+          />
+          <div class="item-overlay">
+            <span class="item-cat">Interior</span
+            ><span class="item-name">Lounge Area</span>
+          </div>
+        </div>
+      </div>
+      <p class="photo-count" id="photoCount">Showing 18 photos</p>
+    </main>
+    <!-- ── FOOTER ── -->
+    <footer class="gallery-footer">
+      <p class="footer-logo">LA MAISON</p>
+      <p class="footer-sub">Fine Dining · Riyadh</p>
+    </footer>
+    <!-- ── LIGHTBOX ── -->
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose">&#10005;</button>
+      <button class="lb-arrow lb-prev" id="lbPrev">&#8249;</button>
+      <button class="lb-arrow lb-next" id="lbNext">&#8250;</button>
+      <div class="lb-content">
+        <img src="" alt="" id="lbImg" crossorigin="anonymous" />
+        <div class="lb-meta">
+          <span class="lb-name" id="lbName"></span>
+          <span class="lb-counter" id="lbCounter"></span>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* ── Filter Logic ── */
+      const items = Array.from(document.querySelectorAll(".grid-item"));
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const photoCount = document.getElementById("photoCount");
+      let visible = [...items];
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const cat = btn.dataset.cat;
+          visible = [];
+          items.forEach((item) => {
+            const match = cat === "all" || item.dataset.cat === cat;
+            item.style.display = match ? "" : "none";
+            if (match) visible.push(item);
+          });
+          photoCount.textContent = `Showing ${visible.length} photo${visible.length !== 1 ? "s" : ""}`;
+        });
+      });
+      /* ── Lightbox Logic ── */
+      const lightbox = document.getElementById("lightbox");
+      const lbImg = document.getElementById("lbImg");
+      const lbName = document.getElementById("lbName");
+      const lbCounter = document.getElementById("lbCounter");
+      let currentIdx = 0;
+      function openLightbox(idx) {
+        currentIdx = idx;
+        const item = visible[idx];
+        lbImg.src = item.querySelector("img").src;
+        lbImg.alt = item.querySelector("img").alt;
+        lbName.textContent = item.querySelector(".item-name").textContent;
+        lbCounter.textContent = `${idx + 1} / ${visible.length}`;
+        lightbox.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeLightbox() {
+        lightbox.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      function prevPhoto() {
+        openLightbox((currentIdx - 1 + visible.length) % visible.length);
+      }
+      function nextPhoto() {
+        openLightbox((currentIdx + 1) % visible.length);
+      }
+      items.forEach((item, idx) => {
+        item.addEventListener("click", () => {
+          const visIdx = visible.indexOf(item);
+          if (visIdx !== -1) openLightbox(visIdx);
+        });
+      });
+      document
+        .getElementById("lbClose")
+        .addEventListener("click", closeLightbox);
+      document.getElementById("lbPrev").addEventListener("click", prevPhoto);
+      document.getElementById("lbNext").addEventListener("click", nextPhoto);
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("open")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowLeft") prevPhoto();
+        if (e.key === "ArrowRight") nextPhoto();
+      });
+      /* ── Sticky filter bar ── */
+      const bar = document.getElementById("filtersBar");
+      const header = document.querySelector(".gallery-header");
+      window.addEventListener("scroll", () => {
+        bar.classList.toggle(
+          "stuck",
+          window.scrollY > header.offsetHeight - 60,
+        );
+      });
+    </script>
+  </body>
+</html>

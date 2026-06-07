@@ -1,3 +1,79 @@
+/* الأستايل الأساسي للشاشات الكبيرة */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-toggle {
+    display: none; /* مخفي في الكمبيوتر */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* تظبيط الموبايل (الشاشات الأصغر من 768 بكسل) */
+/* ----------------------------------------- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* يظهر فقط على الموبايل */
+        margin-left: 15px;
+    }
+
+    /* تحويل القائمة العادية لتصبح قائمة رأسية مخفية فوق الشاشة */
+    .nav-links {
+        position: absolute;
+        top: 70px; /* ينزل تحت الهيدر مباشرة */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        
+        /* إخفاء القائمة في الوضع الطبيعي */
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+    }
+
+    /* كلاس هضيفه بالجاوا سكريبت عشان يظهر القائمة لما تضغط على الزرار */
+    .nav-links.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* إذا كنت تريد إخفاء زرار الحجز على الموبايل الصغير جداً أو تصغيره */
+    .book-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
